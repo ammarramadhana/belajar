@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Daftar mahasiwa |By Ammar Ramadhan</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Tabel Mahasiswa</h1>
+                <span>jumlah mahasiswa berhasil didata</span>
+                <table id="data-table">
+                    <thead>
+                    <tr>
+                        <td><b>NAMA</b></td>
+                        <td><b>NIM</b></td>
+                        <td><b>JURUSAN</b></td>
+                    </tr>
+                </thead>
+                </table>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Data Mahasiswa</h1>
+                <span>Tambahkan data</span>        
+                <tr>
+                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"/></td>
+                </tr>
+                <tr>
+                    <input type="text" id="nim" name="nim" placeholder="NIM (Nomer Induk Mahasiswa)"/></td>
+                </tr>
+                <tr>
+                    <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan"/></td>
+                </tr>
+                <tr>
+                <tr>
+                <button type="button" value="Tambah Data" onclick="tambahData()">Tambahkan Data</button>
+                </tr>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Data Mahasiswa</h1>
+                    <span>input data kembali</span>
+                    <button class="hidden" id="login">Kembali</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Tabel Mahasiswa</h1>
+                    <span>untuk melihat data yang ditambahkan</span>
+                    <button class="hidden" id="register">cek data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
